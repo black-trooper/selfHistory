@@ -21,7 +21,11 @@ export class AppComponent {
     private historyDatas : Array<HistoryData> = [
         {title: 'event1', year: 2008, month:8, date:31},
         {title: 'event2', year: 2008, month:9, date:1},
-        {title: 'event3', year: 2010, month:2, date:1}
+        {title: 'event1', year: 2009, month:8, date:31},
+        {title: 'event2', year: 2009, month:9, date:1},
+        {title: 'event3', year: 2010, month:2, date:1},
+        {title: 'event1', year: 2011, month:8, date:31},
+        {title: 'event2', year: 2011, month:9, date:1}
     ];
 
     private viewDatas () {
