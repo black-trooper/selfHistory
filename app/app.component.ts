@@ -34,8 +34,6 @@ export class AppComponent {
             });
             array[index].datas = monthList;
         });
-
-        console.log(list);
         return list;
     }
 
