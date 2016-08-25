@@ -1,0 +1,9 @@
+body{
+	padding-top: 2em;
+}
+.year-block{
+	margin: 0.5em 0;
+}
+.month-block{
+	list-style-type: none;
+}

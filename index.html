@@ -3,7 +3,9 @@
     <title>Self History</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <!-- 1. Load libraries -->
      <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -18,6 +20,13 @@
   </head>
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <div class="ui-page-theme-a">
+        <div data-role="header" data-position="fixed" role="contentinfo" class="ui-header ui-bar-inherit ui-header-fixed slideup">
+            <a href="#" data-icon="gear" class="ui-btn-left ui-link ui-btn ui-icon-gear ui-btn-icon-notext ui-shadow" data-role="button" role="button">Setting</a>
+            <h1 class="ui-title" role="heading" aria-level="1">Self History</h1>
+            <a href="#" data-icon="plus" class="ui-btn-right ui-link ui-btn ui-icon-plus ui-btn-icon-notext ui-shadow" data-role="button" role="button">Add</a>
+    	</div>
+        <my-app>Loading...</my-app>
+    </div>
   </body>
 </html>
