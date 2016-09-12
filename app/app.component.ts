@@ -14,7 +14,8 @@ import { Component } from '@angular/core';
         </dd>
     </dl>
   </div>
-  `
+  `,
+  styleUrls: ['app/app.component.css']
 })
 
 export class AppComponent {
@@ -44,10 +45,10 @@ export class AppComponent {
     private groupBy(arr:Array<any>, key:string) {
         var newArr:Array<GroupData> = [],
             types = {},
-            newItem,
+            newItem:any,
             i:number,
             j:number,
-            cur;　
+            cur:any;　
         for (i = 0, j = arr.length; i < j; i++) {
             cur = arr[i];
             if (!(cur[key] in types)) {
