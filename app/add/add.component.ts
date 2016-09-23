@@ -15,16 +15,17 @@ import {
   host: {
      '[@routeAnimation]': 'true',
      '[style.display]': "'block'",
-     '[style.position]': "'absolute'"
+     '[style.position]': "'absolute'",
+     '[style.width]': "'100%'"
   },
   animations: [
     trigger('routeAnimation', [
-      state('*', style({transform: 'translateY(0)', opacity: 1})),
+      state('*', style({transform: 'translateX(0)'})),
       transition('void => *', [
-        style({transform: 'translateY(100%)'}),
+        style({transform: 'translateX(100%)'}),
         animate(200)
       ]),
-      transition('* => void', animate(200, style({transform: 'translateY(100%)'})))
+      transition('* => void', animate(200, style({transform: 'translateX(100%)'})))
     ])
   ]
 })
