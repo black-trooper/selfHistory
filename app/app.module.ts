@@ -14,6 +14,7 @@ import { AppComponent }  from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { NavigationComponent }  from './navigation/navigation.component';
+import { ListComponent }  from './list/list.component';
 // import { HeroesComponent }     from './heroes.component';
 // import { HeroDetailComponent } from './hero-detail.component';
 // import { HeroAddComponent }    from './hero-add.component';
@@ -32,6 +33,7 @@ import { NavigationComponent }  from './navigation/navigation.component';
   declarations: [
     AppComponent,
     NavigationComponent,
+    ListComponent,
     // DashboardComponent,
     // HeroesComponent,
     // HeroDetailComponent,
