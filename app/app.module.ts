@@ -2,11 +2,11 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 
-import { Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
+// import { Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 // Imports for loading & configuring the in-memory web api
 import { HttpModule, XHRBackend } from '@angular/http';
-import { InMemoryBackendService, SEED_DATA } from 'angular2-in-memory-web-api';
+//import { InMemoryBackendService, SEED_DATA } from 'angular2-in-memory-web-api';
 //import { InMemoryDataService }               from './in-memory-data.service';
 
 import { AppComponent }  from './app.component';
@@ -15,11 +15,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { NavigationComponent }  from './navigation/navigation.component';
 import { ListComponent }  from './list/list.component';
-// import { HeroesComponent }     from './heroes.component';
-// import { HeroDetailComponent } from './hero-detail.component';
-// import { HeroAddComponent }    from './hero-add.component';
-// import { HeroEditComponent }   from './hero-edit.component';
-//
+
 // import { HeroService }   from './hero.service';
 
 @NgModule({
