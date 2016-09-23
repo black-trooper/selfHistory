@@ -2,17 +2,21 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="year-block" *ngFor="let year of viewDatas();">
-    <h2>{{year.key}}年</h2>
-    <dl *ngFor="let month of year.datas">
-        <dt>{{month.key}}月</dt>
-        <dd *ngFor="let date of month.datas">
-            {{date.key}}日
-            <div *ngFor="let detail of date.datas">
-                {{detail.title}}
-            </div>
-        </dd>
-    </dl>
+  <div class="container">
+  <div class="panel panel-default year-block" *ngFor="let year of viewDatas();">
+    <div class="panel-body">
+        <h2>{{year.key}}年</h2>
+        <dl *ngFor="let month of year.datas">
+            <dt>{{month.key}}月</dt>
+            <dd *ngFor="let date of month.datas">
+                {{date.key}}日
+                <div *ngFor="let detail of date.datas">
+                    {{detail.title}}
+                </div>
+            </dd>
+        </dl>
+    </div>
+  </div>
   </div>
   `,
   styleUrls: ['app/app.component.css']
