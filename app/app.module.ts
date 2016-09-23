@@ -11,8 +11,8 @@ import { InMemoryBackendService, SEED_DATA } from 'angular2-in-memory-web-api';
 
 import { AppComponent }  from './app.component';
 // import { routing }       from './app.routing';
-//
-// import { DashboardComponent }  from './dashboard.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 // import { HeroesComponent }     from './heroes.component';
 // import { HeroDetailComponent } from './hero-detail.component';
 // import { HeroAddComponent }    from './hero-add.component';
@@ -26,6 +26,7 @@ import { AppComponent }  from './app.component';
     FormsModule,
     // routing,
     HttpModule,
+    NgbModule,
   ],
   declarations: [
     AppComponent,
