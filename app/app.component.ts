@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
   <my-navigation></my-navigation>
-  <my-list></my-list>
+  <router-outlet></router-outlet>
   `,
   styleUrls: ['app/app.component.css']
 })

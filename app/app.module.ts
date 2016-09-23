@@ -10,11 +10,12 @@ import { HttpModule, XHRBackend } from '@angular/http';
 //import { InMemoryDataService }               from './in-memory-data.service';
 
 import { AppComponent }  from './app.component';
-// import { routing }       from './app.routing';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { routing }       from './app.routing';
 
 import { NavigationComponent }  from './navigation/navigation.component';
 import { ListComponent }  from './list/list.component';
+import { AddComponent }  from './add/add.component';
 
 // import { HeroService }   from './hero.service';
 
@@ -22,7 +23,7 @@ import { ListComponent }  from './list/list.component';
   imports: [
     BrowserModule,
     FormsModule,
-    // routing,
+    routing,
     HttpModule,
     NgbModule,
   ],
@@ -35,6 +36,7 @@ import { ListComponent }  from './list/list.component';
     // HeroDetailComponent,
     // HeroAddComponent,
     // HeroEditComponent,
+    AddComponent,
   ],
   // providers: [
   //   HeroService,

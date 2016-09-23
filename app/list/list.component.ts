@@ -1,8 +1,21 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  trigger,
+  animate
+} from '@angular/core';
+
 @Component({
   selector: 'my-list',
   templateUrl: 'app/list/list.component.html',
-  styleUrls: ['app/list/list.component.css']
+  styleUrls: ['app/list/list.component.css'],
+  host: {
+     '[@routeAnimation]': 'true',
+     '[style.display]': "'block'",
+     '[style.position]': "'absolute'"
+  },
+  animations: [
+    trigger('routeAnimation', [])
+  ]
 })
 
 export class ListComponent {
