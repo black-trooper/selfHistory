@@ -15,4 +15,6 @@ export class NavigationComponent {
   leftLinkName: string;
   @Input()
   rightLinkName: string;
+  @Input()
+  title: string;
 }
