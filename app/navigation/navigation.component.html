@@ -1,14 +1,14 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-3"></div>
+      <div class="col-xs-3">
+        <p class="navbar-text" *ngIf="leftRouterLink"><a routerLink="{{leftRouterLink}}">{{leftLinkName}}</a></p>
+      </div>
       <div class="col-xs-6">
-        <div class="navbar-header">
-          <a class="navbar-brand" routerLink="/list">Self History</a>
-        </div>
+        <div class="navbar-brand">Self History</div>
       </div>
       <div class="col-xs-3">
-        <button type="button" class="navbar-toggle" routerLink="/add">Add</button>
+        <p class="navbar-text" *ngIf="rightRouterLink"><a routerLink="{{rightRouterLink}}">{{rightLinkName}}</a></p>
       </div>
     </div>
   </div>

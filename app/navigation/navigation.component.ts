@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-navigation',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 
 export class NavigationComponent {
+  @Input()
+  leftRouterLink: string;
+  @Input()
+  rightRouterLink: string;
+  @Input()
+  leftLinkName: string;
+  @Input()
+  rightLinkName: string;
 }
