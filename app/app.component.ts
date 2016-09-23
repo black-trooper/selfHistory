@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="ui-body ui-body-a ui-corner-all year-block" *ngFor="let year of viewDatas();">
+  <div class="year-block" *ngFor="let year of viewDatas();">
     <h2>{{year.key}}年</h2>
     <dl *ngFor="let month of year.datas">
         <dt>{{month.key}}月</dt>
