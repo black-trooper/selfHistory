@@ -13,6 +13,7 @@ import { AppComponent }  from './app.component';
 // import { routing }       from './app.routing';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { NavigationComponent }  from './navigation/navigation.component';
 // import { HeroesComponent }     from './heroes.component';
 // import { HeroDetailComponent } from './hero-detail.component';
 // import { HeroAddComponent }    from './hero-add.component';
@@ -30,6 +31,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   ],
   declarations: [
     AppComponent,
+    NavigationComponent,
     // DashboardComponent,
     // HeroesComponent,
     // HeroDetailComponent,

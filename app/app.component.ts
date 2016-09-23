@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
+  <my-navigation></my-navigation>
   <div class="container">
   <div class="panel panel-default year-block" *ngFor="let year of viewDatas();">
     <div class="panel-body">
